@@ -1,0 +1,36 @@
+{
+    "name"        : "express",
+    "version"     : "0.0.1",
+    "description" : "One page website",
+    "author"      : "Chengkun",
+    "homepage"    : "blog.silli.me",
+
+    "repository"  : {
+      "type": "git",
+      "url" : "git://github.com/chengkun/express.git"
+    },
+
+    "private"     : true,
+    "licenses"    : [
+      {
+        "type": "MIT",
+        "url" : "LICENSE URL ON MY HOMEPAGE"
+      }
+    ],
+    
+    "scripts"     : {
+      "start" : "node index",
+      "text"  : "grunt validate --varbose"
+    },
+
+    "engine"  : {
+      "node" : "~0.10.0"
+    },
+
+    "engineStrict": true,
+    "dependencies": {
+      "express": "4.0.0",
+      "express-hbs":"",
+      "sqlite3": "",
+    }
+}
