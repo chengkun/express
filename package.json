@@ -17,7 +17,7 @@
         "url" : "LICENSE URL ON MY HOMEPAGE"
       }
     ],
-    
+
     "scripts"     : {
       "start" : "node index",
       "text"  : "grunt validate --varbose"
@@ -30,7 +30,7 @@
     "engineStrict": true,
     "dependencies": {
       "express": "4.0.0",
-      "express-hbs":"",
-      "sqlite3": "",
+      "express-hbs":"~0.7.6",
+      "sqlite3": "~2.1.19"
     }
 }
