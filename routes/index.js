@@ -1,3 +1,9 @@
 exports.index = function(req, res){
-  res.render('index', {title: 'Index'});
+  var user = {
+    first: 'Brian',
+    last: 'Mancini',
+    site: 'http://derpturkey.com',
+    age: 32
+  }
+  res.render('index', user);
 }

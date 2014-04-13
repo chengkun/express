@@ -1,4 +1,5 @@
 var express = require('express'),
+    hbs = require('express-hbs'),
     routes = require('./routes'),
     http = require('http'),
     path = require('path');
@@ -6,10 +7,17 @@ var express = require('express'),
 var app = express();
 
 app.set('port', process.env.PORT || 3000);
+
+app.set('view engine', hbs);
+app.engine('hbs', hbs.express3({
+  defaultLayout:__dirname + '/views/layouts/default.hbs',
+  partialsDir: __dirname + '/views/partials',
+  layoutsDir: __dirname + '/views/layouts'
+}))
 app.set('views', __dirname + '/views');
-app.set('view engine', 'hbs');
+
 app.set(express.favicon());
-app.set(express.logger('dev'));
+//app.set(express.logger('dev'));
 app.set(express.bodyParser());
 app.use(express.methodOverride());
 app.use(app.router);
