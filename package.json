@@ -1,6 +1,6 @@
 {
     "name"        : "express",
-    "version"     : "0.0.1",
+    "version"     : "0.0.2",
     "description" : "One page website",
     "author"      : "Chengkun",
     "homepage"    : "blog.silli.me",
@@ -30,7 +30,8 @@
     "engineStrict": true,
     "dependencies": {
       "express": "3.4.8",
-      "express-hbs":"~0.7.6",
-      "sqlite3": "~2.1.19"
+      "jade": "*",
+      "mongodb": "*",
+      "stylus": "*"
     }
 }
