@@ -23,7 +23,8 @@ app.configure('development', function(){
     app.locals.pretty = true;
 });
 
-app.get('/', routes.index);
+//app.get('/', routes.index);
+app.get('/', routes.twenty);
 app.get('/twenty', routes.twenty);
 
 http.createServer(app).listen(app.get('port'), function(){
