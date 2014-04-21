@@ -2,12 +2,13 @@ doctype html
 
 html
   head
-    title Twenty by HTML5 UP
+    title Duno by Makker
     meta(http-equiv='content-type', content='text/html; charset=utf-8')
     meta(name='description', content='')
     meta(name='keywords', content='')
+    //link(rel='stylesheet', href='css/style.css')
     //if lte IE 8
-      script(src='twenty/css/ie/html5shiv.js')
+    script(src='twenty/css/ie/html5shiv.js')
     script(src='twenty/js/jquery.min.js')
     script(src='twenty/js/jquery.dropotron.min.js')
     script(src='twenty/js/skel.min.js')
@@ -21,6 +22,8 @@ html
       link(rel='stylesheet', href='twenty/css/ie/v8.css')
     //if lte IE 9
       link(rel='stylesheet', href='twenty/css/ie/v9.css')
+
+
   body.index.loading
     // Header
     header#header.alt
@@ -31,7 +34,7 @@ html
       nav#nav
         ul
           li.current
-            a(href='#') Welcome
+            a.marque.fade-transition(href='#main') Welcome
           li.submenu
             a(href='') Projects
             ul
@@ -76,7 +79,7 @@ html
           br
           | for DSLR
           br
-          | by
+          | by&nbsp;
           a(href='http://html5up.net') Makkr
           | .
         footer
@@ -146,21 +149,21 @@ html
         .row
           .4u
             section
-              span.icon.feature.fa-check
+              span.icon.feature.fa-camera
               header
                 h3 This is Something
               p
                 | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
           .4u
             section
-              span.icon.feature.fa-check
+              span.icon.feature.fa-caret-square-o-right
               header
                 h3 Also Something
               p
                 | Sed tristique purus vitae volutpat ultrices. Aliquam eu elit eget arcu commodo suscipit dolor nec nibh. Proin a ullamcorper elit, et sagittis turpis. Integer ut fermentum.
           .4u
             section
-              span.icon.feature.fa-check
+              span.icon.feature.fa-gears
               header
                 h3 Probably Something
               p

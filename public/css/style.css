@@ -50,6 +50,49 @@ a{
   color:white;
 }
 
+/*.image {
+    position:relative;
+    width:400px;
+    height:400px;
+}*/
+.image img {
+    width:100%;
+    vertical-align:top;
+}
+.image:after {
+    content:'\A';
+    position:absolute;
+    width:100%; height:100%;
+    top:0; left:0;
+    background:rgba(255,153,153,0.6);
+    opacity:0;
+    transition: all 0.5s;
+    -webkit-transition: all 0.5s;
+}
+.image:hover:after {
+    opacity:1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*ayuan*/
 
 @charset "UTF-8";
